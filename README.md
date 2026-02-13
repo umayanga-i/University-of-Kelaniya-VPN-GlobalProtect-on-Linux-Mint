@@ -97,11 +97,21 @@ Your VPN is now active 🎉
 
 ## 🔌 Disconnect VPN
 
-Press:
+
+Close terminal
+
+If you already have a stuck connection right now
+
+Run this to force disconnect:
+```
+sudo pkill -f "openconnect.*gp.kln.ac.lk"
 
 ```
-CTRL + C
+or (more aggressive):
 ```
+sudo pkill openconnect
+```
+
 
 ---
 
