@@ -94,8 +94,9 @@ ESP tunnel connected; exiting HTTPS mainloop.
 Your VPN is now active 🎉
 
 ---
+# Create Script File
 ---
-### Create Script File
+#### Create Script File
 
 Create a file named:
 
@@ -123,7 +124,7 @@ echo "VPN Disconnected."
 
 ---
 
-# Add Your Credentials
+#### Add Your Credentials
 
 Replace:
 
@@ -141,7 +142,7 @@ PASSWORD="MySecurePassword123"
 
 ---
 
-# Make Script Executable
+#### Make Script Executable
 
 ```bash
 chmod +x connect-vpn-auto.sh
