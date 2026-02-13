@@ -123,7 +123,7 @@ echo "VPN Disconnected."
 
 ---
 
-### 3️⃣ Add Your Credentials
+# Add Your Credentials
 
 Replace:
 
@@ -141,7 +141,7 @@ PASSWORD="MySecurePassword123"
 
 ---
 
-### 4️⃣ Make Script Executable
+# Make Script Executable
 
 ```bash
 chmod +x connect-vpn-auto.sh
