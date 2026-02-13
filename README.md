@@ -94,11 +94,74 @@ ESP tunnel connected; exiting HTTPS mainloop.
 Your VPN is now active 🎉
 
 ---
+---
+### Create Script File
+
+Create a file named:
+
+```
+connect-vpn-auto.sh
+```
+
+Paste the following inside:
+
+```bash
+#!/bin/bash
+
+PORTAL="gp.kln.ac.lk"
+
+# 🔐 ENTER YOUR CREDENTIALS HERE
+USERNAME="YOUR_USERNAME"
+PASSWORD="YOUR_PASSWORD"
+
+echo "Connecting to University of Kelaniya VPN..."
+
+echo "$PASSWORD" | sudo openconnect --protocol=gp --user="$USERNAME" --passwd-on-stdin $PORTAL
+
+echo "VPN Disconnected."
+```
+
+---
+
+### 3️⃣ Add Your Credentials
+
+Replace:
+
+```
+YOUR_USERNAME
+YOUR_PASSWORD
+```
+
+Example:
+
+```bash
+USERNAME="it12345"
+PASSWORD="MySecurePassword123"
+```
+
+---
+
+### 4️⃣ Make Script Executable
+
+```bash
+chmod +x connect-vpn-auto.sh
+```
+
+---
+
+
+
+
+
+
+
 
 ## 🔌 Disconnect VPN
 
 
 Close terminal
+
+OR
 
 If you already have a stuck connection right now
 
